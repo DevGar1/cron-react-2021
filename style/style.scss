@@ -1,0 +1,243 @@
+// - Grayish blue: hsl(237, 18%, 59%)
+// - Soft red: hsl(345, 95%, 68%
+// - White: hsl(0, 0%, 100%)
+// - Dark desaturated blue: hsl(236, 21%, 26%)
+// - Very dark blue: hsl(235, 16%, 14%)
+// - Very dark (mostly black) blue: hsl(234, 17%, 12%)
+// - Family: [Red Hat Text](https://fonts.google.com/specimen/Red+Hat+Text)
+// - Weights: 700
+
+$socialIcons: hsl(237, 18%, 59%);
+$numberColor: hsl(345, 95%, 68%);
+$white: hsl(0, 0%, 100%);
+$blue: hsl(234, 17%, 12%);
+$blueUpper: hsl(235, 16%, 14%);
+$blueMedium: hsl(236, 21%, 26%);
+$fontSize: 14px;
+
+@media (min-width: 0px) {
+	body {
+		background: linear-gradient(to bottom, $blueUpper 10%, $blueMedium 90%);
+		font-family: "Red Hat Text", sans-serif;
+		font-size: $fontSize;
+		overflow-x: hidden;
+		overflow-y: hidden;
+		height: 100vh;
+		width: 100%;
+		background-repeat: no-repeat;
+		color: $white;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		margin: 0;
+		padding: 0;
+	}
+
+	h1 {
+		font-size: 330%;
+		margin: 20px 0;
+	}
+
+	p {
+		margin: 100px 0 0 0;
+		font-size: 20px;
+	}
+
+	.main {
+		width: 100%;
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		margin: 100px 0;
+	}
+	.other {
+		position: absolute;
+		bottom: 0;
+		left: -300px;
+		img {
+			width: 100%;
+		}
+	}
+
+	.social-icons {
+		display: flex;
+		justify-content: center;
+		color: $numberColor;
+		position: absolute;
+		bottom: 70px;
+	}
+
+	.social-icons > * {
+		margin: 0 10px;
+		width: 10%;
+		color: $numberColor;
+	}
+
+	.time {
+		display: flex;
+		justify-content: center;
+		text-align: center;
+	}
+
+	.data {
+		height: 100px;
+		border: 1px solid $blueUpper;
+		width: 22%;
+		text-align: center;
+		display: flex;
+		margin: 0 2%;
+		flex-direction: column;
+		position: relative;
+		background-color: $blueMedium;
+		border-radius: 15px;
+		font-size: 130%;
+	}
+	.time-data {
+		color: $numberColor;
+		text-align: center;
+		height: 100%;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		font-size: 160%;
+	}
+
+	.name {
+		align-items: center;
+	}
+
+	.circle {
+		background-color: $blueUpper;
+		height: 10px;
+		width: 5px;
+		position: absolute;
+		top: 43%;
+		border-radius: 0 20px 20px 0;
+		border-top: 1px solid black;
+		border-right: 1px solid black;
+		border-bottom: 1px solid black;
+	}
+	.circle-2 {
+		right: 0;
+		border-radius: 20px 0 0 20px;
+		border-top: 1px solid black;
+		border-left: 1px solid black;
+		border-right: 0;
+		border-bottom: 1px solid black;
+	}
+
+	.upp-side {
+		position: absolute;
+		top: 0;
+		height: 50%;
+		width: 100%;
+		background-color: transparent;
+		box-shadow: 0px 10px 18px -4px rgba(150, 149, 165, 0.1);
+	}
+
+	.low-side {
+		position: absolute;
+		bottom: 0;
+		height: 50%;
+		width: 100%;
+		background-color: transparent;
+		box-shadow: 0px -10px 18px -4px rgba(150, 149, 165, 0.1);
+		border-top: 1px solid rgba(0, 0, 0, 0.2);
+	}
+
+	.atri {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		a {
+			color: $numberColor;
+		}
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) and (max-height: 450px) {
+	.other {
+		bottom: -100px;
+		left: 0px;
+	}
+
+	.social-icons {
+		bottom: 70px;
+	}
+
+	h1 {
+		font-size: 80px;
+	}
+
+	p {
+		margin: 0;
+		font-size: 20px;
+	}
+	.time-data {
+		font-size: 300%;
+	}
+
+	.main {
+		margin: -30px 0;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	h1 {
+		font-size: 70px;
+	}
+	.social-icons {
+		bottom: 60px;
+	}
+	p {
+		font-size: 40px;
+		margin: 0;
+	}
+	.other {
+		bottom: 0px;
+		left: 0px;
+	}
+
+	.montain {
+		height: 800%;
+	}
+
+	.data {
+		width: 105%;
+		height: 140px;
+	}
+
+	.time-data {
+		font-size: 800%;
+	}
+	.main {
+		margin: 30px 0;
+	}
+}
+
+@media screen and (min-height: 0) and (max-height: 400px) {
+	.main {
+		margin: -40px 0;
+	}
+
+	h1 {
+		margin: 20px 0;
+	}
+}
+
+@media screen and (min-height: 400px) and (min-width: 450px) {
+	.main {
+		margin: 20px 0;
+	}
+
+	.time-data {
+		font-size: 300%;
+	}
+
+	p {
+		font-size: 30px;
+	}
+}

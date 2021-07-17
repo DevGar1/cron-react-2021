@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/cron-react-2021/static/css/main.e5c1d314.chunk.css",
+    "main.js": "/cron-react-2021/static/js/main.102aeea2.chunk.js",
+    "main.js.map": "/cron-react-2021/static/js/main.102aeea2.chunk.js.map",
+    "runtime-main.js": "/cron-react-2021/static/js/runtime-main.c66c638f.js",
+    "runtime-main.js.map": "/cron-react-2021/static/js/runtime-main.c66c638f.js.map",
+    "static/js/2.a54a66bf.chunk.js": "/cron-react-2021/static/js/2.a54a66bf.chunk.js",
+    "static/js/2.a54a66bf.chunk.js.map": "/cron-react-2021/static/js/2.a54a66bf.chunk.js.map",
+    "index.html": "/cron-react-2021/index.html",
+    "static/css/main.e5c1d314.chunk.css.map": "/cron-react-2021/static/css/main.e5c1d314.chunk.css.map",
+    "static/js/2.a54a66bf.chunk.js.LICENSE.txt": "/cron-react-2021/static/js/2.a54a66bf.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c66c638f.js",
+    "static/js/2.a54a66bf.chunk.js",
+    "static/css/main.e5c1d314.chunk.css",
+    "static/js/main.102aeea2.chunk.js"
+  ]
+}
